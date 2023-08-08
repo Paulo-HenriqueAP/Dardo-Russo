@@ -1,1 +1,1 @@
-# Dardo-Russo
+Eu tenho algumas arminhas de brinquedo, então, pensei em fazer este joguinho simples. Cada arminha tem seu som retirado diretamente das reais. As fotos foram tiradas diretamente do celular e depois passaram por edição. A M4 é de um amigo, e os sons dela são retirados da internet..
