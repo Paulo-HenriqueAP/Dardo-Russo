@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Dardo Russo</title>
+    <link rel="shortcut icon" href="src/iconed.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <button id="mun"><img id="dardo" src=""></button></li>
+
+    <button onclick="carregado()" id="pente_carreguei">PUXAR</button>
+
+    <button id="armaBotao" onclick="atirar()"><img id="arma" src="" alt="arma"></button>
+
+    <button id="trocar" onclick="abrirFechar_Armas()">LOJA</button>
+
+    <ul id="armasDesbloqueadas" class="hidden">
+        <button id="fecharArmas" onclick="abrirFechar_Armas()">X</button>
+        <li><button id="pistola" onclick="trocarP()">Pistola pequena</button></li>
+        <li><button id="escopeta" onclick="trocarE()">Escopeta = 3 🎫</button></li>
+        <li><button id="pistolaG" onclick="trocarPg()">Pistola = 5 🎫</button></li>
+        <li><button id="escopetaP" onclick="trocarEp()">Escopeta CS = 6 🎫</button></li>
+        <li><button id="revolver" onclick="trocarR()">Revólver = 7 🎫</button></li>
+        <li><button id="m4" onclick="trocarM()">M4 = 9 🎫</button></li>
+        <li><button id="vida" onclick="add_vida()">Vida ❤️ = 1 🎫</button></li>
+    </ul>
+
+    <audio id="som" autoplay>
+        <source src="">
+    </audio>
+
+    <span id="destino"></span>
+
+    <button id="girar" onclick="girarArma()">⚖️</button>
+
+    <ul class="totalDC">
+        <li id="totalVidas"></li>
+        <li id="Tc"></li>
+    </ul>
+
+    <span id="desbloquearArmas"></span>
+    
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

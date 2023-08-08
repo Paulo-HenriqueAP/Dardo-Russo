@@ -1,0 +1,261 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #F5F5F5;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 2px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px 1px slategrey;
+}
+
+#dardo {
+    width: 60%;
+}
+
+#mun {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0.5px 1px 1px black;
+}
+
+#trocar {
+    position: fixed;
+    bottom: 1%;
+    padding: 1%;
+    left: 1%;
+}
+
+#pente_carreguei {
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    padding: 1%;
+    cursor: grab;
+}
+
+#carregado {
+    width: 100%;
+}
+
+#arma {
+    width: 100%;
+    cursor: crosshair;
+}
+
+#armaBotao {
+    position: fixed;
+    background-color: unset;
+    box-shadow: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pequena {
+    width: 40%;
+}
+
+.media {
+    width: 60%;
+}
+
+.grande {
+    width: 80%;
+}
+
+#destino {
+    position: absolute;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.escuro {
+    background-color: black;
+    opacity: 0%;
+    background-image: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#girar {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+}
+
+.totalDC {
+    position: fixed;
+    left: 0%;
+    list-style: none;
+    font-size: xx-small;
+    padding: 0%;
+    top: 1%;
+}
+
+.bloquear {
+    pointer-events: none;
+    opacity: 50%;
+}
+
+#armasDesbloqueadas {
+    color: #F5F5F5;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    list-style: none;
+    padding: 0%;
+    background-color: black;
+    box-shadow: 1px 1px 1px 1px steelblue;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+li {
+    margin: 8px;
+}
+
+#pistola,
+#escopeta,
+#pistolaG,
+#m4,
+#revolver,
+#escopetaP,
+#vida {
+    font-size: xx-small;
+    width: 100%;
+    color: #F5F5F5;
+    background-color: steelblue;
+    text-align: center;
+}
+
+
+#fecharArmas {
+    color: red;
+    width: 100%;
+    text-align: right;
+    font-size: 60%;
+    border: none;
+    box-shadow: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.semC {
+    animation-duration: 0.5s;
+    animation-name: semClicks;
+}
+
+@keyframes semClicks {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: maroon;
+    }
+}
+
+.semPuxar {
+    animation-duration: 0.3s;
+    animation-name: naoPuxou;
+}
+
+@keyframes naoPuxou {
+    from {
+        background-color: slateblue;
+    }
+
+    to {
+        background-color: skyblue;
+    }
+}
+
+.reiniciar {
+    animation-name: restart;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    padding: 1%;
+}
+
+@keyframes restart {
+    from {
+        background-color: silver;
+    }
+
+    to {
+        background-color: royalblue;
+    }
+}
+
+.morrendo {
+    animation-name: vida1;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 5px;
+
+}
+
+@keyframes vida1 {
+    from {
+        background-color: #F5F5F5;
+    }
+
+    to {
+        background-color: #8a0303;
+    }
+}
+
+.over {
+    animation-name: fim;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    width: 25%;
+}
+
+@keyframes fim {
+    from {
+        left: -15%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+@media (max-width: 600px) {
+    .pequena {
+        width: 80%;
+    }
+    
+    .media {
+        width: 90%;
+    }
+    
+    .grande {
+        width: 100%;
+    }
+
+    .over {
+       width: 50%
+    }
+}
